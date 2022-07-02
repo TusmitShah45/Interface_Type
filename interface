@@ -1,0 +1,38 @@
+fun main() {
+    println("Hello World")
+    var m=Mango()
+    m.eat()
+    m.cut()
+    var a = Apple()
+    a.eat()
+    a.cut()
+}
+interface Fruit{
+    fun eat()
+    fun cut(){
+        println("Cutting the fruits using knife")
+    }
+}
+open class Mango():Fruit{
+    override fun eat()
+    {
+        println("Eating the Mangoes which are good in taste")
+    }
+    override fun cut()
+    {
+        println("Cutting the Mangoes with blade")
+        super.cut()
+    }
+}
+open class Apple(): Fruit{
+    override fun eat()
+    {
+        println("Eating the Apples which are good in taste")
+    }
+    override fun cut()
+    {
+        println("Cutting the Apples with blade")
+        super.cut()
+    }
+    
+}
